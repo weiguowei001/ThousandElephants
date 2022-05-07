@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.10.0)
 project(thousand-elephants)
 
 # specify the C++ standard
-set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # thousand-elephants sources
@@ -11,8 +11,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(thousand-elephants_SOURCES
     ${CMAKE_CURRENT_LIST_DIR}/main.cpp
-    # ${CMAKE_CURRENT_LIST_DIR}/first/s1.cpp
     ${CMAKE_CURRENT_LIST_DIR}/first/s1.hpp
+    ${CMAKE_CURRENT_LIST_DIR}/first/s2.hpp
     )
 
 add_executable(thousand-elephants ${thousand-elephants_SOURCES})
